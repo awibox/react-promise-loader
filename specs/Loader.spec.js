@@ -4,7 +4,7 @@ import Loader from '../src/components/Loader';
 
 describe('Loader', () => {
   it('should render correctly', () => {
-    const component = shallow(<Loader />);
+    const component = shallow(<Loader loading={true} />);
     expect(component).toMatchSnapshot();
   });
 });
