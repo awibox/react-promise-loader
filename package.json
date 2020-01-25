@@ -1,7 +1,7 @@
 {
   "name": "react-promise-loader",
   "version": "1.0.0",
-  "description": "The loader component for React",
+  "description": "This is an NPM package with a component for React that will help you display the loader at use react-promise-tracker",
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -18,7 +18,9 @@
   "keywords": [
     "react-component",
     "npm-package",
-    "loader"
+    "loader-component",
+    "loader",
+    "promise-tracker"
   ],
   "author": "awibox",
   "license": "MIT",
