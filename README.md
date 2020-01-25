@@ -1,83 +1,71 @@
-![react-npm-package-template](https://repository-images.githubusercontent.com/236028186/e0034e00-3ee4-11ea-8676-b3f80c86678a)
+![react-promise-loader](https://repository-images.githubusercontent.com/236146663/26a78580-3f83-11ea-9773-25da38f10104)
 
 <p align="center">
-    <a href="https://www.npmjs.com/package/react-npm-package-template">
-        <img src="https://img.shields.io/npm/v/react-npm-package-template" alt="npm version">
+    <a href="https://www.npmjs.com/package/react-promise-loader">
+        <img src="https://img.shields.io/npm/v/react-promise-loader" alt="npm version">
     </a>
-    <a href="https://travis-ci.org/awibox/react-npm-package-template">
-        <img src='https://travis-ci.org/awibox/react-npm-package-template.svg?branch=master' alt='Build' />
+    <a href="https://travis-ci.org/awibox/react-promise-loader">
+        <img src='https://travis-ci.org/awibox/react-promise-loader.svg?branch=master' alt='Build' />
     </a>
-    <a href='https://coveralls.io/github/awibox/react-npm-package-template?branch=master'>
-        <img src='https://coveralls.io/repos/github/awibox/react-npm-package-template/badge.svg?branch=master' alt='Coverage Status' />
+    <a href='https://coveralls.io/github/awibox/react-promise-loader?branch=master'>
+        <img src='https://coveralls.io/repos/github/awibox/react-promise-loader/badge.svg?branch=master' alt='Coverage Status' />
     </a>
-    <a href="https://www.npmjs.com/package/react-npm-package-template">
-        <img src="https://img.shields.io/npm/dm/react-npm-package-template" alt="Downloads">
+    <a href="https://www.npmjs.com/package/react-promise-loader">
+        <img src="https://img.shields.io/npm/dm/react-promise-loader" alt="Downloads">
     </a>
-    <img src="https://img.shields.io/github/license/awibox/react-npm-package-template" alt="license">
+    <img src="https://img.shields.io/github/license/awibox/react-promise-loader" alt="license">
 </p>
 
 ## Table of contents
-* [How to install](#howtoinstall)
-* [Initializing the package](#initializing)
-* [Rename a component](#rename)
-* [Build of the package](#build)
-* [Publishing a package](#publish)
-* [Travis CI](#travis)
-* [Coveralls](#coveralls)
-* [Badges in the readme](#badges)
+* [Installation](#installation)
+* [Getting started](#gettingstarted)
+* [The settings of the component](#settings)
+* [Contributing](#contributing)
 
-<a name="howtoinstall"></a>
-## How to install
-You can use this project like template. 
-To do this, you need press button "**Use this template**".
-
-Or clone repository and go to the project folder.
+<a name="installation"></a>
+## Installation
+You need to install promise loader and promise tracker packages:
 ```bash
-git clone https://github.com/awibox/react-redux-app-boilerplate.git ProjectName
-cd ProjectName
+npm install react-promise-loader react-promise-tracker
 ```
-Then you should install required dependencies.
+You can use yarn:
 ```bash
-yarn install
+yarn add react-promise-loader react-promise-tracker
 ```
-<a name="initializing"></a>
-## Initializing the package
-The first step is to initialize your package. You should execute following command:
-```bash
-npm init
+<a name="gettingstarted"></a>
+## Getting started
+Wrap promises that you would like to track as in the following example:
+```diff
++ import { trackPromise} from 'react-promise-tracker';
+//...
+
++ trackPromise(
+    fetchUsers(); // You function that returns a promise
++ );
 ```
-And fill in the required fields (package name, version, license). You can correct the other fields manually in the **package.json**.
+Then you need to add the Loader component and send data from the react-promise-tracker:
+```diff
++ import { usePromiseTracker } from 'react-promise-tracker';
++ import Loader from 'react-promise-loader';
 
-<a name="rename"></a>
-## Rename a component
-The next step is to replace the ```YourComponentName``` in the entire project with the one you need.
-
-<a name="build"></a>
-## Build of the package
-After writing the code you need to build the package with the following command:
-```bash
-yarn  build
+const App = () => (
+  <div className="app">
+    ...
++     <Loader promiseTracker={usePromiseTracker} color={'#3d5e61'} background={'rgba(255,255,255,.5)'} />
+  </div>
+);
+export default App;
 ```
 
-<a name="publish"></a>
-## Publishing a package
-To publish a package, run the command:
-```bash
-npm publish
-```
-If you are not logged in to npm you should run the command before publishing:
-```bash
-npm login
-```
+<a name="settings"></a>
+## The settings of the component
+|Parameter|Type|Description|Default|
+|--------------------|--------|-----------|-------|
+|**background**|string|Sets the color for the background in any format that supports css|``` rgba(255,255,255,.5) ```|
+|**color**|string|Sets the color of the spinner|``` #000 ```|
+|**promiseTracker**|boolean|You need to set ```usePromiseTracker``` function from the ```react-promise-tracker```||
+|**loading**|boolean|If you need to run the loader without tracking promises you should set ```true```|``` false ```|
 
-<a name="travis"></a>
-## Travis CI
-You need to register on the [Travis CI](https://travis-ci.org/) and connect the repository.
-
-<a name="coveralls"></a>
-## Coveralls
-You need to register on the [Coveralls](https://coveralls.io/) and connect the repository.
-
-<a name="badges"></a>
-## Badges in the README.md
-For **badges** to work you need to change the repository name in the link and image paths.
+<a name="contributing"></a>
+## Contributing
+Please read through our [CONTRIBUTING.md](/.github/CONTRIBUTING.md).
