@@ -69,6 +69,7 @@ Loader.defaultProps = {
   color: '#000',
   loading: false,
   background: 'rgba(255,255,255,.5)',
+  promiseTracker: false,
 };
 
 export default Loader;
