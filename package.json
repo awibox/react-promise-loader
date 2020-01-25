@@ -1,7 +1,7 @@
 {
-  "name": "react-npm-package-template",
+  "name": "react-promise-loader",
   "version": "1.0.0",
-  "description": "The template that will help you quickly start developing your NPM package for React",
+  "description": "The loader component for React",
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --mode production",
@@ -12,26 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/awibox/react-npm-package-template.git"
+    "url": "git+https://github.com/awibox/react-promise-loader.git"
   },
   "keywords": [
     "react-component",
     "npm-package",
-    "template",
-    "css-modules",
-    "jest",
-    "eslint",
-    "travis-ci",
-    "coveralls",
-    "webpack",
-    "scss"
+    "loader"
   ],
   "author": "awibox",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/awibox/react-npm-package-template/issues"
+    "url": "https://github.com/awibox/react-promise-loader/issues"
   },
-  "homepage": "https://github.com/awibox/react-npm-package-template#readme",
+  "homepage": "https://github.com/awibox/react-promise-loader#readme",
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/plugin-proposal-class-properties": "^7.8.3",

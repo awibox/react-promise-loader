@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import styles from '../styles/YourComponentName.scss';
+import styles from '../styles/Loader.scss';
 
-class YourComponentName extends Component {
+class Loader extends Component {
   static propTypes = {
     text: PropTypes.string,
   };
@@ -21,4 +21,4 @@ class YourComponentName extends Component {
   }
 }
 
-export default YourComponentName;
+export default Loader;
