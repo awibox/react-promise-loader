@@ -1,4 +1,4 @@
-![react-promise-loader](https://repository-images.githubusercontent.com/236146663/26a78580-3f83-11ea-9773-25da38f10104)
+![react-promise-loader](https://repository-images.githubusercontent.com/236146663/28c41100-3f90-11ea-9922-a1ed44b60cbe)
 
 <p align="center">
     <a href="https://www.npmjs.com/package/react-promise-loader">
@@ -63,7 +63,7 @@ export default App;
 |--------------------|--------|-----------|-------|
 |**background**|string|Sets the color for the background in any format that supports css|``` rgba(255,255,255,.5) ```|
 |**color**|string|Sets the color of the spinner|``` #000 ```|
-|**promiseTracker**|boolean|You need to set ```usePromiseTracker``` function from the ```react-promise-tracker```||
+|**promiseTracker**|boolean|You need to set ```usePromiseTracker``` function from the ```react-promise-tracker```|``` false ```|
 |**loading**|boolean|If you need to run the loader without tracking promises you should set ```true```|``` false ```|
 
 <a name="contributing"></a>
