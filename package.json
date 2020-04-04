@@ -1,6 +1,6 @@
 {
   "name": "react-promise-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This is NPM package with a component for React that will help you display the loader at use react-promise-tracker",
   "main": "./dist/index.js",
   "scripts": {
