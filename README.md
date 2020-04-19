@@ -1,20 +1,17 @@
+<div align="center">
+
 ![react-promise-loader](https://repository-images.githubusercontent.com/236146663/28c41100-3f90-11ea-9922-a1ed44b60cbe)
 
-<p align="center">
-    <a href="https://www.npmjs.com/package/react-promise-loader">
-        <img src="https://img.shields.io/npm/v/react-promise-loader" alt="npm version">
-    </a>
-    <a href="https://travis-ci.org/awibox/react-promise-loader">
-        <img src='https://travis-ci.org/awibox/react-promise-loader.svg?branch=master' alt='Build' />
-    </a>
-    <a href='https://coveralls.io/github/awibox/react-promise-loader?branch=master'>
-        <img src='https://coveralls.io/repos/github/awibox/react-promise-loader/badge.svg?branch=master' alt='Coverage Status' />
-    </a>
-    <a href="https://www.npmjs.com/package/react-promise-loader">
-        <img src="https://img.shields.io/npm/dm/react-promise-loader" alt="Downloads">
-    </a>
-    <img src="https://img.shields.io/github/license/awibox/react-promise-loader" alt="license">
-</p>
+[![Version](https://img.shields.io/npm/v/react-promise-loader)](https://www.npmjs.com/package/react-promise-loader)
+[![Build](https://travis-ci.org/awibox/react-promise-loader.svg?branch=master)](https://travis-ci.org/awibox/react-promise-loader)
+[![Coverage](https://coveralls.io/repos/github/awibox/react-promise-loader/badge.svg?branch=master)](https://coveralls.io/github/awibox/react-promise-loader?branch=master)
+[![Minified size](https://img.shields.io/bundlephobia/min/react-promise-loader)](https://github.com/awibox/react-promise-loader/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/npm/dm/react-promise-loader)](https://www.npmjs.com/package/react-promise-loader)
+[![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=awibox/react-promise-loader)](https://dependabot.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/awibox/react-promise-loader/pulls)
+[![Tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+
+</div>
 
 ## Table of contents
 * [Installation](#installation)
