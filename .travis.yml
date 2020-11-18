@@ -10,7 +10,7 @@ cache:
 install:
   - npm install
 script:
-  - npm lint
-  - npm build
+  - npm run lint
+  - npm run build
 after_script:
-  - npm coveralls
+  - npm run coveralls
