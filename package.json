@@ -1,8 +1,8 @@
 {
   "name": "react-promise-loader",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This is NPM package with a component for React that will help you display the loader at use react-promise-tracker",
-  "main": "./dist/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "build": "webpack --mode production",
     "lint": "eslint --report-unused-disable-directives src",
