@@ -3,7 +3,7 @@
 ![react-promise-loader](https://repository-images.githubusercontent.com/236146663/28c41100-3f90-11ea-9922-a1ed44b60cbe)
 
 [![Version](https://img.shields.io/npm/v/react-promise-loader)](https://www.npmjs.com/package/react-promise-loader)
-[![Build](https://img.shields.io/github/workflow/status/awb-pw/awb-pw/Deploy)](https://github.com/awibox/react-promise-loader/actions)
+[![Build](https://img.shields.io/github/workflow/status/react-promise-loader/Deploy)](https://github.com/awibox/react-promise-loader/actions)
 [![Coverage](https://coveralls.io/repos/github/awibox/react-promise-loader/badge.svg?branch=master)](https://coveralls.io/github/awibox/react-promise-loader?branch=master)
 [![Minified size](https://img.shields.io/bundlephobia/min/react-promise-loader)](https://github.com/awibox/react-promise-loader/blob/master/LICENSE)
 [![Downloads](https://img.shields.io/npm/dm/react-promise-loader)](https://www.npmjs.com/package/react-promise-loader)
