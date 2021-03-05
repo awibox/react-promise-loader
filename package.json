@@ -1,6 +1,6 @@
 {
   "name": "react-promise-loader",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "This is NPM package with a component for React that will help you display the loader at use react-promise-tracker",
   "main": "./dist/index.js",
   "scripts": {
@@ -33,12 +33,12 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.3",
     "babel-loader": "8.1.0",
     "coveralls": "^3.1.0",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.3",
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.0.0",
@@ -56,8 +56,8 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "jest": {
     "collectCoverageFrom": [
