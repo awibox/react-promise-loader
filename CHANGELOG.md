@@ -28,6 +28,21 @@
 
 * semantic relese ([cc6acd2](https://github.com/awibox/react-promise-loader/commit/cc6acd215beb604e3c899267d7d9274fe9e9d399))
 
+# 1.0.0 (2022-06-23)
+
+
+### Bug Fixes
+
+* git ign ([c5e558e](https://github.com/awibox/react-promise-loader/commit/c5e558e03e8b8a3a4f10f2f17c9c46514cb0a899))
+* switch to dist dir ([022861a](https://github.com/awibox/react-promise-loader/commit/022861ac08423330378fee4ddc6fa7e414bd575c))
+* Update dependencies ([a18c6c1](https://github.com/awibox/react-promise-loader/commit/a18c6c1781ce8bf1b8d40129f595de75d111da5d))
+* update package.json ([0f69283](https://github.com/awibox/react-promise-loader/commit/0f69283f9fa56d96476fec67705aca9ec858e927))
+
+
+### Features
+
+* semantic relese ([cc6acd2](https://github.com/awibox/react-promise-loader/commit/cc6acd215beb604e3c899267d7d9274fe9e9d399))
+
 # 1.0.0 (2022-03-27)
 
 
