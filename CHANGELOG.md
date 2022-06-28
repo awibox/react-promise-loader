@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/awibox/react-promise-loader/compare/v1.1.3...v1.1.4) (2022-06-28)
+
+
+### Bug Fixes
+
+* **dependencies:** dependencies were updated ([2b11662](https://github.com/awibox/react-promise-loader/commit/2b116620577831d35fc9da1d79b824c0a5f9f2ae))
+
 # 1.0.0 (2022-06-28)
 
 
