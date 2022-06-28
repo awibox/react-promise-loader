@@ -55,12 +55,13 @@ export default App;
 
 <a name="settings"></a>
 ## The settings of the component
-|Parameter|Type|Description|Default|
-|--------------------|--------|-----------|-------|
-|**background**|string|Sets the color for the background in any format that supports css|``` rgba(255,255,255,.5) ```|
-|**color**|string|Sets the color of the spinner|``` #000 ```|
-|**promiseTracker**|boolean|You need to set ```usePromiseTracker``` function from the ```react-promise-tracker```|``` false ```|
-|**loading**|boolean|If you need to run the loader without tracking promises you should set ```true```|``` false ```|
+| Parameter          | Type    | Description                                                                           | Default                      |
+|--------------------|---------|---------------------------------------------------------------------------------------|------------------------------|
+| **background**     | string  | Sets the color for the background in any format that supports css                     | ``` rgba(255,255,255,.5) ``` |
+| **color**          | string  | Sets the color of the spinner                                                         | ``` #000 ```                 |
+| **promiseTracker** | boolean | You need to set ```usePromiseTracker``` function from the ```react-promise-tracker``` | ``` false ```                |
+| **loading**        | boolean | If you need to run the loader without tracking promises you should set ```true```     | ``` false ```                |
+| **zIndex**         | number  | You can change the z-index to distribute the layers correctly                         | ``` 999 ```                  |
 
 <a name="contributing"></a>
 ## Contributing

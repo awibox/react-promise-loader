@@ -1,27 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const defaultLoaderStyle = {
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  zIndex: 10,
-  background: 'rgba(255,255,255,.5)',
-  backfaceVisibility: 'hidden',
-};
-
-const defaultSpinnerStyle = {
-  position: 'absolute',
-  left: '50%',
-  top: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 100,
-  height: 100,
-};
-
 const Loader = (props) => {
+  const defaultLoaderStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: props.zIndex,
+    background: 'rgba(255,255,255,.5)',
+    backfaceVisibility: 'hidden',
+  };
+
+  const defaultSpinnerStyle = {
+    position: 'absolute',
+    left: '50%',
+    top: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 100,
+    height: 100,
+  };
+
   const { promiseInProgress } = props.promiseTracker ? props.promiseTracker() : false;
   const loaderStyle = {
     ...defaultLoaderStyle,
@@ -63,6 +63,7 @@ Loader.propTypes = {
   loading: PropTypes.bool,
   background: PropTypes.string,
   promiseTracker: PropTypes.any,
+  zIndex: PropTypes.number,
 };
 
 Loader.defaultProps = {
@@ -70,6 +71,7 @@ Loader.defaultProps = {
   loading: false,
   background: 'rgba(255,255,255,.5)',
   promiseTracker: false,
+  zIndex: 999,
 };
 
 export default Loader;
