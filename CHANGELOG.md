@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/awibox/react-promise-loader/compare/v1.1.4...v1.2.0) (2022-06-28)
+
+
+### Features
+
+* **zIndex:** [#321](https://github.com/awibox/react-promise-loader/issues/321) ability to add custom z-index ([#367](https://github.com/awibox/react-promise-loader/issues/367)) ([65a2fee](https://github.com/awibox/react-promise-loader/commit/65a2feecd7bd654f13a861ba4632dd400d0726bc))
+
 ## [1.1.4](https://github.com/awibox/react-promise-loader/compare/v1.1.3...v1.1.4) (2022-06-28)
 
 
