@@ -2,13 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Loader = (props) => {
+  const {
+    color, background, loading, promiseTracker, zIndex,
+  } = props;
+
   const defaultLoaderStyle = {
     position: 'absolute',
     top: 0,
     left: 0,
     right: 0,
     bottom: 0,
-    zIndex: props.zIndex,
+    zIndex,
     background: 'rgba(255,255,255,.5)',
     backfaceVisibility: 'hidden',
   };
@@ -22,10 +26,10 @@ const Loader = (props) => {
     height: 100,
   };
 
-  const { promiseInProgress } = props.promiseTracker ? props.promiseTracker() : false;
+  const { promiseInProgress } = promiseTracker ? promiseTracker() : false;
   const loaderStyle = {
     ...defaultLoaderStyle,
-    background: props.background,
+    background,
   };
   const spinnerItemsArray = [
     { transform: 'rotate(0 50 50)', begin: '-0.9166666666666666s' },
@@ -42,13 +46,13 @@ const Loader = (props) => {
     { transform: 'rotate(330 50 50)', begin: '0s' },
   ];
   return (
-    props.loading || promiseInProgress
+    loading || promiseInProgress
       ? <div style={loaderStyle}>
       <div style={defaultSpinnerStyle}>
         <svg className="lds-spinner" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
              viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
           {spinnerItemsArray.map((item) => <g key={item.transform} transform={item.transform}>
-            <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill={props.color}>
+            <rect x="47" y="24" rx="9.4" ry="4.8" width="6" height="12" fill={color}>
               <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin={item.begin} repeatCount="indefinite"/>
             </rect>
           </g>)}
