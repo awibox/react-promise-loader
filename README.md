@@ -7,7 +7,6 @@
 [![Coverage](https://coveralls.io/repos/github/awibox/react-promise-loader/badge.svg?branch=master)](https://coveralls.io/github/awibox/react-promise-loader?branch=master)
 [![Minified size](https://img.shields.io/bundlephobia/min/react-promise-loader)](https://github.com/awibox/react-promise-loader/blob/master/LICENSE)
 [![Downloads](https://img.shields.io/npm/dm/react-promise-loader)](https://www.npmjs.com/package/react-promise-loader)
-[![Dependabot](https://api.dependabot.com/badges/status?host=github&repo=awibox/react-promise-loader)](https://dependabot.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/awibox/react-promise-loader/pulls)
 [![Tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
